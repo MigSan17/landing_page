@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*--------- FIRST PART ---------*/
+body {
+    margin: 0;
+    background: white;
+    font-family: Roboto, "sans-serif";
+    display: flex;
+    flex-flow: column;
+}
+
+.firstSection {
+    background-color: #1F2937;
+}
+
+.header {
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.companyheader {
+    font-size: 24px;
+    height: 50px;
+    color: #F9F4F8;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.links {
+    display: flex;
+    font-size: 18px;
+    gap: 20px;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+li a::after {
+    content: ' ';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: white;
+    transition:all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+.secondaryHeader {
+    height: 400px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.awesome {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 400px;
+}
+.headermain {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.headermain-text, .headermain {
+    color: #F9FAF8;
+}
+
+button.first {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #3882F6;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.first:after {
+    content: '✈';
+    color: #F9FAF8;
+    position: absolute;
+    opacity: 0;  
+    top: 6px;
+    right: 20px;
+    transition: 0.5s;
+}
+  
+.first:hover{
+    padding-right: 14px;
+    padding-left: 0px;
+}
+  
+.first:hover:after {
+    opacity: 1;
+    right: 15px;
+}
+
+.placeholder {
+    height: 300px;
+    width: auto;
+}
+
+
+
+
+
+/*--------- SECOND PART ---------*/
+.main {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.headinfo {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 52px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    width: 300px;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-self: space-around;
+}
+
+.pic {
+    width: 300px;
+    height: auto;
+    border: solid #3882F6;
+    border-radius: 10px;
+}
+
+
+.text {
+    margin-top: 10px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*--------- THIRD PART ---------*/
+.quote {
+    background-color: #E5E7EB;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    width: 900px;
+    padding: 10px;
+}
+
+.actual-quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.remark {
+    align-self: flex-end;
+    margin-top: 25px;
+    margin-right: 50px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+/*--------- FOURTH PART ---------*/
+
+.signup {
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain {
+    background-color: #3882F6;
+    width: 800px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.containsecond {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+button.second {
+    display: inline-block;
+    background-color: #3882F6;
+    position: relative;
+    border-color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 90px;
+    cursor: pointer;    
+    transition: all 0.3s;
+}
+/*padding: 5px;
+    display: inline-block;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #3882F6;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+    */
+
+.second:after {
+    content: '✈';
+    color: #F9FAF8;
+    position: relative;
+    opacity: 0;  
+    top: 0px;
+    right: 15px;
+    transition: 0.5s;
+}
+
+.second:hover{
+    padding-right: 14px;
+    padding-left: 0px;
+}
+
+.second:hover:after {
+    opacity: 1;
+    right: -15px;
+}
+
+
+/*--------- FOOTER ---------*/
+
+.footer {
+    height: 80px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+}
