@@ -55,12 +55,12 @@ li a:hover::after {
 }
 
 .secondaryHeader {
-    height: 400px;
-    padding-left: 150px;
-    padding-right: 150px;
+    height: 100%;
+    padding: 50px 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
 .awesome {
